@@ -1,5 +1,5 @@
 import{HttpClient} from "@angular/common/http";
-import { Card } from "../Models/card.ts";
+import { Card } from "../Models/card";
 import { inject, Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 

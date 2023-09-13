@@ -1,0 +1,36 @@
+.container{
+    padding:3em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+.cards-container{
+    display: flex;
+    width: 100%;
+    padding-top: 5em;
+}
+.cards-form{
+    width: 50%;
+    padding: 2em;
+}
+.card-grid{
+    width:50%;
+    padding: 2em;
+}
+.card-row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.2em;
+}
+.card-row-details{
+    background-color: white;
+    flex-grow: 1;
+    padding: 0.4em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2em;
+    cursor: pointer;
+}

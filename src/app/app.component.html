@@ -1,1 +1,16 @@
-<h1>SUT22</h1>
+<div class="container">
+    <h1>Angular + RestAPI .Net6</h1>
+    <div class="cards-container">
+        <div class="cards-form">
+
+        </div>
+        <div class="card-grid">
+            <div (click)="populateForm(card)"class="card-row" *ngFor="let card of cards">
+                <div class="card-row-details">
+                   <span>{{card.holderName}}</span>
+                   <span>{{card.cardNumber}}</span> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

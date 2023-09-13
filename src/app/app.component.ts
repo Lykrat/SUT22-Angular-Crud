@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Card } from './Models/card.ts';
+import { Card } from './Models/card';
 import { CardService } from './Service/card.service';
 
 @Component({
@@ -56,7 +56,9 @@ export class AppComponent {
   }
   
   //Delete
-  deleteCard()
+  onDelete(id:string){
+    this.cardservice.deleteCard(id).subscribe(response=>this.getAllCard());
+  }
 
   populateForm(card:Card){
     this.card=card;
