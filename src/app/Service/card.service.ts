@@ -18,7 +18,7 @@ export class CardService{
     //add new card 
     addCard(card:Card):Observable<Card>{
         card.id="00000000-0000-0000-0000-000000000000"
-
+        return this.http.post<Card>(this.baseUrl,card)
     }
 
     //delete card
@@ -26,8 +26,8 @@ export class CardService{
         return this.http.delete<Card>(this.baseUrl + "/" + id)
     };
 
-    //update card
-    updateCard(id:string):Observable<Card>{
-        
+    //update card   
+    updateCard(card:Card):Observable<Card>{
+        return this.http.put<Card>(this.baseUrl+"/" + card.id,card)
     }
 }
